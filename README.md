@@ -36,6 +36,7 @@ This is a sample application demonstrating Quarkus features and best practices. 
 
 Here is an architecture diagram of the application:
 ![Superheroes architecture diagram](images/application-architecture.png)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fchris-neo%2Fquarkus-super-heroes.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fchris-neo%2Fquarkus-super-heroes?ref=badge_shield)
 
 The main UI allows you to pick one random Hero and Villain by clicking on _New Fighters_. Then, click _Fight!_ to start the battle. The table at the bottom shows the list of previous fights.
 ![Fight screen](images/fight-screen.png)
@@ -102,3 +103,7 @@ The OpenShift descriptor will automatically create a `Route` for Prometheus. On 
    > For production-ready Prometheus instances, please see the [Prometheus Operator documentation](https://operatorhub.io/operator/prometheus) for how to properly deploy and configure production-ready instances. 
 
 The Prometheus configuration also uses static configuration for the applications. Prometheus does support the ability to discover applications via annotations. That is not used here, though, because the name of the namespace would need to be known ahead of time and placed into the Prometheus configuration. There is a [sample configuration file](monitoring/config/prometheus_scrape_configs_k8s.yml) that contains this configuration for reference.
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fchris-neo%2Fquarkus-super-heroes.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fchris-neo%2Fquarkus-super-heroes?ref=badge_large)
